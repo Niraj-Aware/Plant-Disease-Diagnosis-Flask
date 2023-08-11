@@ -1,4 +1,4 @@
-pip install tensorflow==2.5.0
+#!/usr/bin/env python
 
 #import os
 import numpy as np

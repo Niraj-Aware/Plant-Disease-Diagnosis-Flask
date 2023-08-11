@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+$pip install tensorflow
 #import os
 import numpy as np
 import streamlit as st

@@ -3,6 +3,7 @@
 #import os
 import numpy as np
 import streamlit as st
+from PIL import Image
 from tensorflow.keras.preprocessing import image
 import tensorflow as tf
 #from gevent.pywsgi import WSGIServer

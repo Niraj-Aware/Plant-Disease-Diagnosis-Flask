@@ -1,11 +1,11 @@
 
 
-import os
+#import os
 import numpy as np
 import streamlit as st
 from tensorflow.keras.preprocessing import image
 import tensorflow as tf
-from gevent.pywsgi import WSGIServer
+#from gevent.pywsgi import WSGIServer
 
 # Load the Keras model
 model = tf.keras.models.load_model('PlantDNet.h5', compile=False)

@@ -1,4 +1,4 @@
-pip install tensorflow
+pip install -r requirements.txt
 
 import os
 import numpy as np

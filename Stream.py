@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 from keras.models import load_model
 from keras.preprocessing import image
+import tensorflow as tf
 
 # Load the pre-trained model
 model = load_model('PlantDNet.h5')  # Update with the correct model path
@@ -13,7 +14,8 @@ def classify_image(img):
     x = np.expand_dims(x, axis=0)
     x /= 255
 
-    custom = model.predict(x)
+    with tf.autograph.experimental.do_not_convert():
+        custom = model.predict(x)
     ind = np.argmax(custom[0])
     return disease_class[ind]
 
